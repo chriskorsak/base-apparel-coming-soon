@@ -17,34 +17,37 @@
   </head>
   <body>
     <main>
-      <header>
+      <header id="header-nav">
         <div class="container">
           <img src="images/logo.svg" alt="logo" />
         </div>
       </header>
-      <section>
+      <section id="email-sign-up">
         <picture>
-          <source srcset="images/hero-desktop.jpg" media="(min-width: 500px)" />
+          <source srcset="images/hero-desktop.jpg" media="(min-width: 768px)" />
           <img
             src="images/hero-mobile.jpg"
             alt="Model looking at camera"
             id="hero-mobile"
           />
         </picture>
-        <div class="container" id="coming-soon">
-          <h1><span class="callout">We're</span> coming soon</h1>
-          <p>
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <form id="add-email">
-            <input type="text" placeholder="Email Address" />
-            <button type="submit">
-              <img src="images/icon-arrow.svg" alt="" />
-            </button>
-          </form>
-        </div>
+        <article id="coming-soon">
+          <div class="container">
+            <img src="images/logo.svg" alt="logo" id="desktop-logo" />
+            <h1><span class="callout">We're</span> coming soon</h1>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <form id="add-email">
+              <input type="text" placeholder="Email Address" />
+              <button type="submit">
+                <img src="images/icon-arrow.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </article>
       </section>
     </main>
   </body>
