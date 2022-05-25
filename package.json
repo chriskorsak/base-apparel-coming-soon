@@ -1,0 +1,15 @@
+{
+  "name": "frontend-mentor-base-apparel-coming-soon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.37.5"
+  }
+}
