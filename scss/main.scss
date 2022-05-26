@@ -18,6 +18,10 @@ body {
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
+main {
+  min-height: 100vh;
+}
+
 .container {
   width: 85%;
   margin: auto;
@@ -26,12 +30,15 @@ body {
 header {
   padding: 2rem 0;
 }
+.logo {
+  max-width: 125px;
+}
 
 section#email-sign-up {
   text-align: center;
 }
 
-img#hero-mobile {
+img#hero {
   width: 100%;
 }
 
@@ -66,6 +73,7 @@ form#add-email {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   margin-top: 0.5rem;
+  position: relative;
 
   input {
     padding: 1rem 2rem;
@@ -76,7 +84,7 @@ form#add-email {
     color: $primaryColor;
     opacity: 0.6;
     font-weight: 400;
-    outline: none;
+    // outline-color: $secondaryColor;
     background-color: inherit;
     &::placeholder {
       color: $primaryColor;
@@ -84,6 +92,12 @@ form#add-email {
     &:focus {
       opacity: 1;
     }
+  }
+  i.error-icon {
+    position: absolute;
+    top: 12px;
+    right: 80px;
+    display: none;
   }
 
   button {
@@ -99,11 +113,14 @@ form#add-email {
   }
 }
 
+.error-message {
+  text-align: left;
+  padding: 0.4rem 2rem;
+  color: $secondaryColor;
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  body {
-    background: url(../dist/images/bg-pattern-desktop.svg);
-    background-position: center;
-  }
   main {
     height: 100vh;
     overflow: hidden;
@@ -112,21 +129,21 @@ form#add-email {
     display: none;
   }
 
-  img#hero-mobile {
+  img#hero {
     width: auto;
   }
 
   #desktop-logo {
     display: block;
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
   }
   .container {
     max-width: 60%;
   }
 
   h1 {
-    font-size: 3.5rem;
-    line-height: 4rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
     letter-spacing: 0.9rem;
   }
 
@@ -146,5 +163,6 @@ form#add-email {
     background-repeat: no-repeat;
     background-position: center left;
     background-image: url('../images/bg-pattern-desktop.svg');
+    background-color: hsl(0, 0%, 98%);
   }
 }

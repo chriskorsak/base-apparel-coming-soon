@@ -19,7 +19,7 @@
     <main>
       <header id="header-nav">
         <div class="container">
-          <img src="images/logo.svg" alt="logo" />
+          <img src="images/logo.svg" alt="logo" class="logo" />
         </div>
       </header>
       <section id="email-sign-up">
@@ -28,12 +28,17 @@
           <img
             src="images/hero-mobile.jpg"
             alt="Model looking at camera"
-            id="hero-mobile"
+            id="hero"
           />
         </picture>
         <article id="coming-soon">
           <div class="container">
-            <img src="images/logo.svg" alt="logo" id="desktop-logo" />
+            <img
+              src="images/logo.svg"
+              alt="logo"
+              id="desktop-logo"
+              class="logo"
+            />
             <h1><span class="callout">We're</span> coming soon</h1>
             <p>
               Hello fellow shoppers! We're currently building our new fashion
@@ -41,11 +46,16 @@
               and our launch deals.
             </p>
             <form id="add-email">
+              <i class="error-icon"
+                ><img src="images/icon-error.svg" alt=""
+              /></i>
               <input type="text" placeholder="Email Address" />
+
               <button type="submit">
                 <img src="images/icon-arrow.svg" alt="" />
               </button>
             </form>
+            <p class="error-message">Please provide a valid email</p>
           </div>
         </article>
       </section>

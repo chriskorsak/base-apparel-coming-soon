@@ -12,6 +12,10 @@ body {
   background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
 }
 
+main {
+  min-height: 100vh;
+}
+
 .container {
   width: 85%;
   margin: auto;
@@ -21,11 +25,15 @@ header {
   padding: 2rem 0;
 }
 
+.logo {
+  max-width: 125px;
+}
+
 section#email-sign-up {
   text-align: center;
 }
 
-img#hero-mobile {
+img#hero {
   width: 100%;
 }
 
@@ -59,6 +67,7 @@ form#add-email {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   margin-top: 0.5rem;
+  position: relative;
 }
 form#add-email input {
   padding: 1rem 2rem;
@@ -69,7 +78,6 @@ form#add-email input {
   color: hsl(0deg, 36%, 70%);
   opacity: 0.6;
   font-weight: 400;
-  outline: none;
   background-color: inherit;
 }
 form#add-email input::placeholder {
@@ -77,6 +85,12 @@ form#add-email input::placeholder {
 }
 form#add-email input:focus {
   opacity: 1;
+}
+form#add-email i.error-icon {
+  position: absolute;
+  top: 12px;
+  right: 80px;
+  display: none;
 }
 form#add-email button {
   grid-row: 1/2;
@@ -90,12 +104,14 @@ form#add-email button {
   filter: drop-shadow(0px 15px 15px hsl(0deg, 80%, 86%));
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    background: url(../dist/images/bg-pattern-desktop.svg);
-    background-position: center;
-  }
+.error-message {
+  text-align: left;
+  padding: 0.4rem 2rem;
+  color: hsl(0deg, 93%, 68%);
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
   main {
     height: 100vh;
     overflow: hidden;
@@ -105,13 +121,13 @@ form#add-email button {
     display: none;
   }
 
-  img#hero-mobile {
+  img#hero {
     width: auto;
   }
 
   #desktop-logo {
     display: block;
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
   }
 
   .container {
@@ -119,8 +135,8 @@ form#add-email button {
   }
 
   h1 {
-    font-size: 3.5rem;
-    line-height: 4rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
     letter-spacing: 0.9rem;
   }
 
@@ -141,6 +157,7 @@ form#add-email button {
     background-repeat: no-repeat;
     background-position: center left;
     background-image: url("../images/bg-pattern-desktop.svg");
+    background-color: hsl(0deg, 0%, 98%);
   }
 }
 
