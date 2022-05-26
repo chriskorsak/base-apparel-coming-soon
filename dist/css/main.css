@@ -37,7 +37,7 @@ img#hero {
   width: 100%;
 }
 
-#coming-soon {
+div#text-area {
   padding: 4rem 0;
 }
 
@@ -78,6 +78,7 @@ form#add-email input {
   color: hsl(0deg, 36%, 70%);
   opacity: 0.6;
   font-weight: 400;
+  outline-color: hsl(0deg, 36%, 70%);
   background-color: inherit;
 }
 form#add-email input::placeholder {
@@ -101,7 +102,8 @@ form#add-email button {
   cursor: pointer;
   background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
   border: none;
-  filter: drop-shadow(0px 15px 15px hsl(0deg, 80%, 86%));
+  filter: drop-shadow(0px 15px 15px #debaba);
+  outline-color: hsl(0deg, 36%, 70%);
 }
 
 .error-message {
@@ -127,15 +129,15 @@ form#add-email button {
 
   #desktop-logo {
     display: block;
-    margin-bottom: 7rem;
+    margin-bottom: 6rem;
   }
 
   .container {
-    max-width: 60%;
+    max-width: 50%;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 4.5rem;
     letter-spacing: 0.9rem;
   }
@@ -151,7 +153,7 @@ form#add-email button {
     grid-column: 2/3;
   }
 
-  article#coming-soon {
+  div#text-area {
     grid-row: 1/2;
     grid-column: 1/2;
     background-repeat: no-repeat;
