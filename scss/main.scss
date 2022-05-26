@@ -87,7 +87,6 @@ form#add-email {
     opacity: 0.6;
     font-weight: 400;
     outline-color: $primaryColor;
-    // outline-color: $secondaryColor; // add when there's a form error
     background-color: inherit;
     &::placeholder {
       color: $primaryColor;
@@ -95,6 +94,10 @@ form#add-email {
     &:focus {
       opacity: 1;
     }
+  }
+
+  .error-border {
+    border: 2px solid $secondaryColor;
   }
 
   i.error-icon {
@@ -118,11 +121,10 @@ form#add-email {
   }
 }
 
-.error-message {
+.message {
   text-align: left;
   padding: 0.4rem 2rem;
   color: $secondaryColor;
-  display: none;
 }
 
 @media screen and (min-width: 768px) {

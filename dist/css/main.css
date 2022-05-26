@@ -87,6 +87,9 @@ form#add-email input::placeholder {
 form#add-email input:focus {
   opacity: 1;
 }
+form#add-email .error-border {
+  border: 2px solid hsl(0deg, 93%, 68%);
+}
 form#add-email i.error-icon {
   position: absolute;
   top: 12px;
@@ -106,11 +109,10 @@ form#add-email button {
   outline-color: hsl(0deg, 36%, 70%);
 }
 
-.error-message {
+.message {
   text-align: left;
   padding: 0.4rem 2rem;
   color: hsl(0deg, 93%, 68%);
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
