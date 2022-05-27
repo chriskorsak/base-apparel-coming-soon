@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(0deg, 6%, 24%);
+  background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1600px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+.logo {
+  max-width: 125px;
+}
+
+section#email-sign-up {
+  text-align: center;
+}
+
+img#hero {
+  width: 100%;
+}
+
+div#text-area {
+  padding: 4rem 0;
+}
+
+#desktop-logo {
+  display: none;
+}
+
+h1 {
+  color: hsl(0deg, 6%, 24%);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  line-height: 2.7rem;
+}
+h1 span.callout {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+}
+
+p {
+  color: hsl(0deg, 36%, 70%);
+  line-height: 1.4rem;
+  padding: 1.5rem 0;
+}
+
+form#add-email {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  margin-top: 0.5rem;
+  position: relative;
+}
+form#add-email input {
+  padding: 1rem 2rem;
+  border-radius: 35px;
+  border: hsl(0deg, 36%, 70%) 1px solid;
+  grid-column: 1/10;
+  grid-row: 1/2;
+  color: hsl(0deg, 36%, 70%);
+  opacity: 0.6;
+  font-weight: 400;
+  outline-color: hsl(0deg, 36%, 70%);
+  background-color: inherit;
+}
+form#add-email input::placeholder {
+  color: hsl(0deg, 36%, 70%);
+}
+form#add-email input:focus {
+  opacity: 1;
+}
+form#add-email .error-border {
+  border: 2px solid hsl(0deg, 93%, 68%);
+}
+form#add-email i.error-icon {
+  position: absolute;
+  top: 12px;
+  right: 80px;
+  display: none;
+}
+form#add-email button {
+  grid-row: 1/2;
+  grid-column: 8/10;
+  border-radius: 35px;
+  justify-self: right;
+  width: 70px;
+  cursor: pointer;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  border: none;
+  filter: drop-shadow(0px 15px 15px #debaba);
+  outline-color: hsl(0deg, 36%, 70%);
+}
+
+.message {
+  text-align: left;
+  padding: 0.4rem 2rem;
+  color: hsl(0deg, 93%, 68%);
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  main {
+    overflow: hidden;
+  }
+
+  header {
+    display: none;
+  }
+
+  img#hero {
+    width: auto;
+  }
+
+  #desktop-logo {
+    display: block;
+    margin-bottom: 6rem;
+  }
+
+  .container {
+    max-width: 50%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.9rem;
+  }
+
+  section#email-sign-up {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 58% 42%;
+  }
+
+  picture {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  div#text-area {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-color: hsl(0deg, 0%, 98%);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
