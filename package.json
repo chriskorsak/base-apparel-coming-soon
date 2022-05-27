@@ -4,12 +4,15 @@
   "private": true,
   "description": "",
   "main": "index.js",
+  "homepage": "https://chriskorsak.github.io/base-apparel-coming-soon",
   "scripts": {
-    "sass": "sass --watch scss:dist/css"
+    "sass": "sass --watch scss:dist/css",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "sass": "^1.37.5"
   }
 }
