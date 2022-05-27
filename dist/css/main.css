@@ -10,10 +10,14 @@ body {
   font-size: 16px;
   color: hsl(0deg, 6%, 24%);
   background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 main {
-  min-height: 100vh;
+  max-width: 1600px;
 }
 
 .container {
@@ -115,9 +119,8 @@ form#add-email button {
   color: hsl(0deg, 93%, 68%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   main {
-    height: 100vh;
     overflow: hidden;
   }
 
@@ -160,6 +163,7 @@ form#add-email button {
     grid-column: 1/2;
     background-repeat: no-repeat;
     background-position: center left;
+    background-size: cover;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-color: hsl(0deg, 0%, 98%);
   }
